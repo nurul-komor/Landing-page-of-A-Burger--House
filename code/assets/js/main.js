@@ -16,7 +16,6 @@ $(document).ready(function() {
         $(".add-phone").toggleClass("show");
     });
 
-
 });
 const navbar = document.querySelector(".navigation-bar")
 const menuBtn = document.querySelector(".grt-mobile-button")
@@ -40,3 +39,10 @@ delivery.onclick = () => {
     call.classList.toggle("show")
 
 }
+
+
+
+$(window).on("load", function() {
+    $(".preloader").fadeOut();
+    $(".preloader").delay(5000).fadeOut("slow");
+});

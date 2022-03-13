@@ -53,10 +53,6 @@ Primary use:   Landing Page
         overflow-x: hidden;
     }
     
-    html {
-        /* overflow-x: hidden; */
-    }
-    
     body.stop {
         overflow: hidden;
     }
@@ -78,6 +74,23 @@ Primary use:   Landing Page
     a:hover {
         text-decoration: none;
     }
+    
+    .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999;
+        background-color: #ffffff;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url("../images/preloader.gif");
+    }
+    /* .animate__fadeOut {
+        --animate-duration: 2s;
+    }
+     */
     
     .delivery-phone {
         position: fixed;
