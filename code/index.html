@@ -261,18 +261,20 @@
             <h4>Reservation</h4>
             <h2>Book your table</h2>
             <div class="input-box">
-                <div class="row">
-                    <div class="col-md-6 input-container left">
-                        <input type="text" name="" id="" placeholder="Name">
-                        <input type="date" name="" id="" placeholder="Date">
-                        <input type="number" name="" id="" placeholder="People">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="col-md-6 input-container left">
+                            <input type="text" name="" id="" placeholder="Name" required="required">
+                            <input type="date" name="" id="" placeholder="Date" required="required">
+                            <input type="number" name="" id="" placeholder="People" required="required">
+                        </div>
+                        <div class="col-md-6 input-container right">
+                            <input type="email" name="" id="" placeholder="Email" required="required">
+                            <input type="time" name="" id="" placeholder="time" required="required">
+                            <button type="submit" class="btn">Find a table</button>
+                        </div>
                     </div>
-                    <div class="col-md-6 input-container right">
-                        <input type="email" name="" id="" placeholder="Email">
-                        <input type="time" name="" id="" placeholder="time">
-                        <button type="submit" class="btn">Find a table</button>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="svg-left-one"><img src="assets/images/input-bottom-left.png" alt=""></div>
