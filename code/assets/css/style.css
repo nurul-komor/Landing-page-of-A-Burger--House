@@ -46,7 +46,15 @@ Primary use:   Landing Page
         margin: 0;
         box-sizing: border-box;
     }
-    
+    ::-moz-selection { /* Code for Firefox */
+        color: var(--text-color);
+        background: var(--primary-color);
+    }
+
+    ::selection {
+        color: var(--text-color);
+        background: #ffb624;
+    }
     body {
         font-family: Montserrate-medium;
         font-size: 14px;
@@ -411,6 +419,26 @@ Primary use:   Landing Page
         color: #fff;
         background: rgb(255, 68, 68);
         border: 1px solid rgb(255, 68, 68);
+    }
+    .add-chart-num{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+    }
+    .add-chart-num input{
+        text-align: center;
+    }
+    .add-chart-num input{
+        max-width: 80px;
+        margin: 0 16px;
+    }
+    .order-section button.add-to-chart.sign{
+        padding: 4px 11.5px;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        margin: 0;
     }
     
     .order-section .order-image {
